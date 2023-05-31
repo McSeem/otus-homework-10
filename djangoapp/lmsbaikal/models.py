@@ -10,7 +10,7 @@ class Question(models.Model):
     question_text = models.CharField(max_length=200)
     course_id = models.IntegerField(default=0)
     course_module_id = models.IntegerField(default=0)
-    tags = ArrayField(models.CharField(max_length=50, default=''), default=list, null=True)
+    tags = models.CharField(max_length=500)
     penalty = models.FloatField(default=1.0)
     publication_date = models.DateTimeField("date published", default=timezone.now)
     changed_date = models.DateTimeField("date changed", default=timezone.now)
