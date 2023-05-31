@@ -21,7 +21,7 @@ class Question(models.Model):
 
     def get_tags_count(self):
 
-        return len(self.tags)
+        return len(self.tags.split(","))
 
 
 class QuestionAnswers(models.Model):

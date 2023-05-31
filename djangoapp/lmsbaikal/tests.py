@@ -19,8 +19,7 @@ class TestQuestion(TestCase):
         """ Тест проверки количества тематических тегов вопроса. """
         tags = ["tag1", "tag2", "tag3"]
 
-        for tag in tags:
-            self.question.tags.append(tag)
+        self.question.tags = ",".join(tags)
 
         self.question.save()
 
