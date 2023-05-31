@@ -6,12 +6,12 @@ from django.views.generic import DetailView, ListView, CreateView, UpdateView
 from .models import Question, QuestionAnswers
 
 
-class QuestionListView(ListView):
+class QuestionListView(ListView): # pylint: disable=too-few-public-methods
     """ CBV-представление списка вопросов. """
     model = Question
 
 
-class QuestionDetailView(DetailView):
+class QuestionDetailView(DetailView): # pylint: disable=too-few-public-methods
     """ CBV-представление детальной страницы вопроса. """
     model = Question
 

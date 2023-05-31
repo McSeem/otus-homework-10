@@ -27,7 +27,7 @@ class Question(models.Model):
         return len(self.tags.split(",")) # pylint: disable=no-member
 
 
-class QuestionAnswers(models.Model):
+class QuestionAnswers(models.Model): # pylint: disable=too-few-public-methods
     """ Модель ответа вопроса. """
     question = models.ForeignKey(Question, on_delete=models.CASCADE, default=1)
     answer = models.CharField(max_length=500)
