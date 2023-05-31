@@ -10,7 +10,7 @@
 # 6. Добавьте несколько сущностей проекта (вопросы и варианты ответов к ним), используя соответсвующие
 #    формы приложения, БД без сидирования
 # 7. Запустите тесты командой:
-#    docker exec -it python-app-django-web python manage.py test
+#    docker exec -it python-app-django-web python djangoapp/manage.py test
 
 FROM python:3.10-buster
 
