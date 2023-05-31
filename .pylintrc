@@ -1,0 +1,3 @@
+[MASTER]
+ignore-patterns=\d{4}_.*?.py
+ignore=tests.py, tests_views.py, urls.py
